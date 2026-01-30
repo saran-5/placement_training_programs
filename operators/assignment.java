@@ -73,5 +73,9 @@ public class assignment {
     int n=2593;
     System.out.println(n<<2);
     System.out.println(012+013);
+
+    int q=24;
+    int r=12;
+    System.out.println(q%r + "%");
   }
 }
