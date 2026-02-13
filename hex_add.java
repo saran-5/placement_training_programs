@@ -6,8 +6,7 @@ public class hex_add {
         int carry=0;
         for(int i=a.length()-1;i>=0;i--){
             int b1=Character.digit(a.charAt(i),16);
-            int b2=Character.digit(b.charAt(i),16);
-        
+            int b2=Character.digit(b.charAt(i),16);        
             int result=b1+b2+carry;
             sum=Integer.toHexString(result%16).toUpperCase()+sum;
             carry=result/16;
