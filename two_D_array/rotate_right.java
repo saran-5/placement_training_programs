@@ -1,0 +1,33 @@
+package two_D_array;
+
+public class rotate_right {
+    public static void right_rotation(int[] row,int k){
+    int n=row.length;
+    k%=n;
+    int[] temp=new int[k];
+    for(int i=0;i<k;i++){
+        temp[i]=row[n-k+i];
+    }
+    for(int i=n-k-1;i>=0;i--){
+        row[i+k]=row[i];
+    }
+    for(int i=0;i<k;i++){
+        row[i]=temp[i];
+    }
+}
+public static void main(String[] args) {
+    int[][]a={
+    {1,2,3,4},
+    {5,6,7,8},
+    {9,10,11,12}};
+    for (int i=0;i<a.length;i++) {
+            right_rotation(a[i], i);
+        }
+    for(int i=0;i<a.length;i++){
+             for(int j=0;j<a[i].length;j++){
+                 System.out.print(a[i][j]+" ");
+             }System.out.println();
+         }
+}
+
+}
