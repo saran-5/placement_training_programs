@@ -2,6 +2,14 @@ public class bin_add {
     public static void main(String[] args) {
         String a="1010";
         String b="1101";
+        while (a.length()!=b.length()) {
+            if(a.length()>b.length()){
+                b="0"+b;
+            }
+            else{
+                a="0"+a;
+            }
+        }
         String sum="";
         int carry=0;
         int result=0;
@@ -16,7 +24,6 @@ public class bin_add {
         if(carry==1){
             sum="1"+sum;
         }
-        
 }
         System.out.println("sum : "+sum);
     }
