@@ -14,7 +14,6 @@ class Circle {
             
         }   
 }
-
 class Main {
     public static void main(String[] args) {
         Circle obj=new Circle();
